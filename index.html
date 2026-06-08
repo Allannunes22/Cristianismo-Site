@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concílios e Santos da Igreja Católica | cristianismo.blog.br</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', serif;
+        }
+
+        body {
+            background-color: #f8f2e9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8b0000, #b22222);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #600000;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #b22222;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .intro {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .intro h2 {
+            color: #8b0000;
+            margin-bottom: 1rem;
+        }
+
+        .concilio, .categoria-santo, .grau {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .concilio h3, .categoria-santo h3, .grau h3 {
+            color: #8b0000;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .data-local, .grau-desc {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .descricao {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .versiculos {
+            background-color: #fff8e6;
+            padding: 1.5rem;
+            border-left: 4px solid #8b0000;
+            border-radius: 4px;
+        }
+
+        .versiculos h4 {
+            color: #8b0000;
+            margin-bottom: 1rem;
+        }
+
+        .versiculo {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .versiculo:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .versiculo-texto {
+            font-style: italic;
+            margin-bottom: 0.3rem;
+        }
+
+        .versiculo-referencia {
+            font-weight: bold;
+            color: #600000;
+        }
+
+        .categoria, .secao-santos {
+            margin-bottom: 3rem;
+        }
+
+        .categoria h2, .secao-santos h2 {
+            color: #8b0000;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #8b0000;
+        }
+
+        .santo {
+            background-color: #fef6f6;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            border-left: 3px solid #b22222;
+        }
+
+        .santo h4 {
+            color: #600000;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .grau-numero {
+            display: inline-block;
+            background-color: #8b0000;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 0.8rem;
+        }
+
+        footer {
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Igreja Católica: Concílios e Santos</h1>
+        <p>Reuniões solenes dos bispos e a vida dos santos, modelos de fé e virtude</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#concilios">Concílios Ecumênicos</a></li>
+            <li><a href="#santos">Hierarquia dos Santos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- ==================== SEÇÃO DOS CONCÍLIOS (ORIGINAL) ==================== -->
+        <section id="concilios" class="secao-concilios">
+            <div class="intro">
+                <h2>O que são os Concílios?</h2>
+                <p>Os Concílios Ecumênicos são assembleias de bispos católicos reunidos em comunhão com o Papa, o Sucessor de Pedro, para tratar de assuntos fundamentais da fé, da moral e da disciplina da Igreja. A autoridade dos concílios está fundamentada na Bíblia, especialmente no Concílio de Jerusalém (Atos 15), onde os apóstolos reuniram-se para resolver questões doutrinais e disciplinares, sob a guia do Espírito Santo.</p>
+                <p><strong>Versículo chave:</strong> <em>"Pois pareceu bem ao Espírito Santo e a nós não vos impor nenhum outro peso além destas coisas necessárias"</em> — <span style="font-weight:bold; color:#8b0000;">Atos 15:28</span></p>
+            </div>
+
+            <!-- ===================== PRIMEIRO MILÊNIO ===================== -->
+            <section id="primeiro-milenio" class="categoria">
+                <h2>Concílios do Primeiro Milênio</h2>
+
+                <!-- 1. Niceia I -->
+                <div class="concilio">
+                    <h3>1. Concílio de Niceia I</h3>
+                    <p class="data-local">325 d.C. • Niceia, Império Romano</p>
+                    <p class="descricao">Convocado pelo Imperador Constantino e presidido pelo Papa Silvestre I. Condenou o arianismo e definiu a divindade de Jesus Cristo, formulando a primeira parte do Credo Niceno-Constantinopolitano.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus."</p>
+                            <p class="versiculo-referencia">João 1:1</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E Ele é a imagem do Deus invisível, o primogênito de toda a criação."</p>
+                            <p class="versiculo-referencia">Colossenses 1:15</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Eu e o Pai somos um."</p>
+                            <p class="versiculo-referencia">João 10:30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Constantinopla I -->
+                <div class="concilio">
+                    <h3>2. Concílio de Constantinopla I</h3>
+                    <p class="data-local">381 d.C. • Constantinopla</p>
+                    <p class="descricao">Convocado pelo Imperador Teodósio I, sob o Papa Dâmaso I. Condenou o macedonianismo (negação da divindade do Espírito Santo) e completou o Credo Niceno-Constantinopolitano que rezamos até hoje.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E o Espírito Santo desceu sobre Ele em forma corpórea, como uma pomba."</p>
+                            <p class="versiculo-referencia">Lucas 3:22</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Porque três são os que dão testemunho no céu: o Pai, o Verbo e o Espírito Santo; e estes três são um."</p>
+                            <p class="versiculo-referencia">1 João 5:7</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Mas o Consolador, o Espírito Santo, que o Pai enviará em meu nome, ele vos ensinará todas as coisas e vos lembrará tudo o que eu vos disse."</p>
+                            <p class="versiculo-referencia">João 14:26</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Éfeso -->
+                <div class="concilio">
+                    <h3>3. Concílio de Éfeso</h3>
+                    <p class="data-local">431 d.C. • Éfeso, Ásia Menor</p>
+                    <p class="descricao">Sob o Papa Celestino I. Condenou o nestorianismo e definiu que Maria é a <strong>Mãe de Deus (Theotokos)</strong>, pois seu Filho, Jesus, é verdadeiro Deus e verdadeiro Homem numa só Pessoa.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Eis que a virgem conceberá e dará à luz um filho, e ele será chamado pelo nome de Emanuel (que traduzido é: Deus conosco)."</p>
+                            <p class="versiculo-referencia">Mateus 1:23</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Porquanto, na verdade, Deus esteve em Cristo, reconciliando o mundo consigo mesmo."</p>
+                            <p class="versiculo-referencia">2 Coríntios 5:19</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E Maria disse: 'A minha alma engrandece ao Senhor, e o meu espírito se alegra em Deus, meu Salvador'."</p>
+                            <p class="versiculo-referencia">Lucas 1:46-47</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Calcedônia -->
+                <div class="concilio">
+                    <h3>4. Concílio de Calcedônia</h3>
+                    <p class="data-local">451 d.C. • Calcedônia, Ásia Menor</p>
+                    <p class="descricao">Sob o Papa Leão I. Definiu que em Jesus Cristo há <strong>uma só Pessoa divina e duas naturezas</strong> — divina e humana — sem confusão, sem mudança, sem divisão, sem separação.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E, quando se completou o tempo, Deus enviou o seu Filho, nascido de mulher, nascido sob a lei."</p>
+                            <p class="versiculo-referencia">Gálatas 4:4</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Quem, sendo em forma de Deus, não julgou ser usurpação ser igual a Deus, mas esvaziou-se a si mesmo, tomando a forma de servo, fazendo-se semelhante aos homens."</p>
+                            <p class="versiculo-referencia">Filipenses 2:6-7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Constantinopla II -->
+                <div class="concilio">
+                    <h3>5. Concílio de Constantinopla II</h3>
+                    <p class="data-local">553 d.C. • Constantinopla</p>
+                    <p class="descricao">Sob o Papa Vigílio. Reafirmou a doutrina de Calcedônia e condenou certos escritos considerados heréticos que ameaçavam a integridade da fé sobre Cristo.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E ninguém pode dizer: 'Jesus é o Senhor', senão pelo Espírito Santo."</p>
+                            <p class="versiculo-referencia">1 Coríntios 12:3</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Jesus Cristo é o mesmo, ontem, e hoje, e eternamente."</p>
+                            <p class="versiculo-referencia">Hebreus 13:8</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Constantinopla III -->
+                <div class="concilio">
+                    <h3>6. Concílio de Constantinopla III</h3>
+                    <p class="data-local">680–681 d.C. • Constantinopla</p>
+                    <p class="descricao">Sob o Papa Agatão. Condenou o monotelismo e definiu que em Jesus Cristo existem <strong>duas vontades e duas operações</strong> — divina e humana — em perfeita harmonia.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Não se faça a minha vontade, mas a tua."</p>
+                            <p class="versiculo-referencia">Lucas 22:42</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Porque eu desci do céu, não para fazer a minha vontade, mas a vontade daquele que me enviou."</p>
+                            <p class="versiculo-referencia">João 6:38</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Niceia II -->
+                <div class="concilio">
+                    <h3>7. Concílio de Niceia II</h3>
+                    <p class="data-local">787 d.C. • Niceia</p>
+                    <p class="descricao">Sob o Papa Adriano I. Condenou o iconoclasmo e definiu a legitimidade e a utilidade das <strong>imagens sagradas</strong>, distinguindo a adoração devida só a Deus da veneração prestada aos santos e suas imagens.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E ele fez dois querubins de ouro... e cobriram com as suas asas sobre a tampa da Arca."</p>
+                            <p class="versiculo-referencia">Êxodo 37:7-9</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Honra a teu pai e a tua mãe."</p>
+                            <p class="versiculo-referencia">Êxodo 20:12</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Porque, como temos muitos membros em um só corpo, mas nem todos os membros têm a mesma função, assim nós, sendo muitos, somos um só corpo em Cristo."</p>
+                            <p class="versiculo-referencia">Romanos 12:4-5</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Constantinopla IV -->
+                <div class="concilio">
+                    <h3>8. Concílio de Constantinopla IV</h3>
+                    <p class="data-local">869–870 d.C. • Constantinopla</p>
+                    <p class="descricao">Sob o Papa Adriano II. Tratou da restauração da comunhão entre Roma e Constantinopla e condenou o cisma de Fócio, reafirmando a primazia do Papa.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Tu és Pedro, e sobre esta pedra edificarei a minha Igreja, e as portas do inferno não prevalecerão contra ela."</p>
+                            <p class="versiculo-referencia">Mateus 16:18</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Apascenta os meus cordeiros... apascenta as minhas ovelhas."</p>
+                            <p class="versiculo-referencia">João 21:15-17</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== MEDIEVAIS ===================== -->
+            <section id="medievais" class="categoria">
+                <h2>Concílios Medievais</h2>
+
+                <!-- 9. Latrão I -->
+                <div class="concilio">
+                    <h3>9. Concílio de Latrão I</h3>
+                    <p class="data-local">1123 d.C. • Roma, Itália</p>
+                    <p class="descricao">Sob o Papa Calisto II. Pôs fim à disputa das investiduras, proibindo autoridades leigas de conferir cargos eclesiásticos, defendendo a autonomia da Igreja.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Dai a César o que é de César, e a Deus o que é de Deus."</p>
+                            <p class="versiculo-referencia">Mateus 22:21</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Não sabeis que os que administram as coisas sagradas vivem do templo, e os que servem ao altar participam do altar?"</p>
+                            <p class="versiculo-referencia">1 Coríntios 9:13</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Latrão II -->
+                <div class="concilio">
+                    <h3>10. Concílio de Latrão II</h3>
+                    <p class="data-local">1139 d.C. • Roma, Itália</p>
+                    <p class="descricao">Sob o Papa Inocêncio II. Acabou com um cisma papal, condenou heresias e reafirmou o celibato clerical.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Porque há eunucos que nasceram assim do ventre de sua mãe; e há eunucos que foram feitos eunucos pelos homens; e há eunucos que a si mesmos se fizeram eunucos por causa do Reino dos Céus. Quem pode compreender, compreenda."</p>
+                            <p class="versiculo-referencia">Mateus 19:12</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E o que é unido ao Senhor é um só espírito com ele."</p>
+                            <p class="versiculo-referencia">1 Coríntios 6:17</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Latrão III -->
+                <div class="concilio">
+                    <h3>11. Concílio de Latrão III</h3>
+                    <p class="data-local">1179 d.C. • Roma, Itália</p>
+                    <p class="descricao">Sob o Papa Alexandre III. Definiu que o Papa deve ser eleito por dois terços dos cardeais e condenou os cátaros.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Onde estiverem dois ou três reunidos em meu nome, aí estou eu no meio deles."</p>
+                            <p class="versiculo-referencia">Mateus 18:20</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Examinai todas as coisas; retende o que é bom."</p>
+                            <p class="versiculo-referencia">1 Tessalonicenses 5:21</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Latrão IV -->
+                <div class="concilio">
+                    <h3>12. Concílio de Latrão IV</h3>
+                    <p class="data-local">1215 d.C. • Roma, Itália</p>
+                    <p class="descricao">Sob o Papa Inocêncio III. O maior concílio medieval. Definiu a <strong>Transubstanciação</strong> na Eucaristia, ordenou a confissão anual e comunhão pascal, e combateu heresias.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Isto é o meu corpo, que é dado por vós; fazei isto em memória de mim."</p>
+                            <p class="versiculo-referencia">Lucas 22:19</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Porque todos quantos comem e bebem, sem discernir o corpo do Senhor, comem e bebem a sua própria condenação."</p>
+                            <p class="versiculo-referencia">1 Coríntios 11:29</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Quem come a minha carne e bebe o meu sangue tem a vida eterna, e eu o ressuscitarei no último dia."</p>
+                            <p class="versiculo-referencia">João 6:54</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13. Lyon I -->
+                <div class="concilio">
+                    <h3>13. Concílio de Lyon I</h3>
+                    <p class="data-local">1245 d.C. • Lyon, França</p>
+                    <p class="descricao">Sob o Papa Inocêncio IV. Tratou da defesa da Igreja contra o Império e questões de reforma.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Portanto, quem resiste à autoridade resiste à ordenação de Deus."</p>
+                            <p class="versiculo-referencia">Romanos 13:2</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E eu te rogarei, e ele te dará outro Consolador, para que esteja convosco para sempre."</p>
+                            <p class="versiculo-referencia">João 14:16</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14. Lyon II -->
+                <div class="concilio">
+                    <h3>14. Concílio de Lyon II</h3>
+                    <p class="data-local">1274 d.C. • Lyon, França</p>
+                    <p class="descricao">Sob o Papa Gregório X. Tentou a união com a Igreja Oriental e definiu a doutrina do Purgatório.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Se alguém destruir o templo de Deus, Deus o destruirá; porque o templo de Deus, que sois vós, é santo."</p>
+                            <p class="versiculo-referencia">1 Coríntios 3:17</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E estes serão punidos com perdição eterna, longe da face do Senhor e da glória do seu poder."</p>
+                            <p class="versiculo-referencia">2 Tessalonicenses 1:9</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Mas quanto à sua salvação, como por meio de fogo."</p>
+                            <p class="versiculo-referencia">1 Coríntios 3:15</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15. Vienne -->
+                <div class="concilio">
+                    <h3>15. Concílio de Vienne</h3>
+                    <p class="data-local">1311–1312 d.C. • Vienne, França</p>
+                    <p class="descricao">Sob o Papa Clemente V. Tratou da supressão da Ordem dos Templários e de reformas na Igreja.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Julgai com justiça o que é justo."</p>
+                            <p class="versiculo-referencia">Deuteronômio 16:18</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E farei com que os seus governantes sejam como crianças, e crianças dominarão sobre eles."</p>
+                            <p class="versiculo-referencia">Isaías 3:4</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== REFORMA ===================== -->
+            <section id="reforma" class="categoria">
+                <h2>Concílios da Época da Reforma</h2>
+
+                <!-- 16. Constança -->
+                <div class="concilio">
+                    <h3>16. Concílio de Constança</h3>
+                    <p class="data-local">1414–1418 d.C. • Constança, Alemanha</p>
+                    <p class="descricao">Acabou com o Grande Cisma do Ocidente (três papas simultâneos), elegeu o Papa Martinho V e condenou heresias de Wycliffe e Hus.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Para que todos sejam um, como tu, Pai, estás em mim e eu em ti, que também eles estejam em nós, para que o mundo creia que tu me enviaste."</p>
+                            <p class="versiculo-referencia">João 17:21</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Mas se ele não te ouvir, toma contigo ainda uma ou duas pessoas, para que toda a palavra seja confirmada pela boca de duas ou três testemunhas."</p>
+                            <p class="versiculo-referencia">Mateus 18:16</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 17. Basileia-Ferrara-Florença -->
+                <div class="concilio">
+                    <h3>17. Concílio de Basileia-Ferrara-Florença</h3>
+                    <p class="data-local">1431–1445 d.C. • Itália / Suíça</p>
+                    <p class="descricao">Sob o Papa Eugênio IV. Buscou a união com as Igrejas Orientais, definindo a doutrina sobre o Espírito Santo e os sacramentos.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Quando vier o Consolador, que eu vos enviarei da parte do Pai, o Espírito da verdade, que procede do Pai, ele dará testemunho de mim."</p>
+                            <p class="versiculo-referencia">João 15:26</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Eis que estou convosco todos os dias, até a consumação dos séculos."</p>
+                            <p class="versiculo-referencia">Mateus 28:20</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 18. Latrão V -->
+                <div class="concilio">
+                    <h3>18. Concílio de Latrão V</h3>
+                    <p class="data-local">1512–1517 d.C. • Roma, Itália</p>
+                    <p class="descricao">Sob o Papa Júlio II e Leão X. Promoveu reformas na Igreja antes da Reforma Protestante e defendeu a autoridade papal.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Eu roguei por ti, para que a tua fé não falhe; e tu, uma vez convertido, confirma os teus irmãos."</p>
+                            <p class="versiculo-referencia">Lucas 22:32</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E tudo o que ligares na terra será ligado no céu; e tudo o que desligares na terra será desligado no céu."</p>
+                            <p class="versiculo-referencia">Mateus 18:18</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 19. Trento -->
+                <div class="concilio">
+                    <h3>19. Concílio de Trento</h3>
+                    <p class="data-local">1545–1563 d.C. • Trento, Itália</p>
+                    <p class="descricao">O grande Concílio da Contra-Reforma. Definiu a doutrina católica contra os protestantes: Sagrada Escritura e Tradição como fontes da fé, os 7 Sacramentos, a Justificação pela fé e obras, o Purgatório, a veneração aos santos, etc.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E assim, irmãos, permanecei firmes e guardai as tradições que aprendestes, seja por palavra, seja por carta nossa."</p>
+                            <p class="versiculo-referencia">2 Tessalonicenses 2:15</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Ide, pois, ensinai todas as nações, batizando-as em nome do Pai, e do Filho, e do Espírito Santo."</p>
+                            <p class="versiculo-referencia">Mateus 28:19</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Assim também a fé, se não tiver obras, é morta por si mesma."</p>
+                            <p class="versiculo-referencia">Tiago 2:17</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Portanto, a fé vem pela pregação, e a pregação vem pela palavra de Cristo."</p>
+                            <p class="versiculo-referencia">Romanos 10:17</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== MODERNOS ===================== -->
+            <section id="modernos" class="categoria">
+                <h2>Concílios dos Tempos Modernos</h2>
+
+                <!-- 20. Vaticano I -->
+                <div class="concilio">
+                    <h3>20. Concílio Vaticano I</h3>
+                    <p class="data-local">1869–1870 d.C. • Roma, Vaticano</p>
+                    <p class="descricao">Sob o Papa Pio IX. Definiu a <strong>Infalibilidade Papal</strong> e a primazia do Papa sobre toda a Igreja.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Eu roguei por ti, para que a tua fé não falhe; e tu, uma vez convertido, confirma os teus irmãos."</p>
+                            <p class="versiculo-referencia">Lucas 22:32</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Tu és Pedro, e sobre esta pedra edificarei a minha Igreja."</p>
+                            <p class="versiculo-referencia">Mateus 16:18</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"E as portas do inferno não prevalecerão contra ela."</p>
+                            <p class="versiculo-referencia">Mateus 16:18</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 21. Vaticano II -->
+                <div class="concilio">
+                    <h3>21. Concílio Vaticano II</h3>
+                    <p class="data-local">1962–1965 d.C. • Roma, Vaticano</p>
+                    <p class="descricao">Sob os Papas João XXIII e Paulo VI. O último e maior concílio. Atualizou a Igreja para o mundo moderno, tratou da Liturgia, da Revelação, da Igreja, da ação pastoral, do ecumenismo e da relação com o mundo contemporâneo.</p>
+                    <div class="versiculos">
+                        <h4>Versículos que sustentam:</h4>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"A Igreja é a coluna e o fundamento da verdade."</p>
+                            <p class="versiculo-referencia">1 Timóteo 3:15</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Vós sois a luz do mundo... brilhe também a vossa luz diante dos homens."</p>
+                            <p class="versiculo-referencia">Mateus 5:14-16</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Como o Pai me enviou, também eu vos envio a vós."</p>
+                            <p class="versiculo-referencia">João 20:21</p>
+                        </div>
+                        <div class="versiculo">
+                            <p class="versiculo-texto">"Para que todos sejam um, como tu, Pai, estás em mim e eu em ti."</p>
+                            <p class="versiculo-referencia">João 17:21</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- ==================== NOVA SEÇÃO: HIERARQUIA DOS SANTOS ==================== -->
+        <section id="santos" class="secao-santos">
+            <div class="intro">
+                <h2>Hierarquia dos Santos</h2>
+                <p>A Igreja Católica classifica os santos por graus, desde o início do processo de canonização até a glória máxima. Abaixo, a ordem completa do <strong>menor grau ao maior</strong>, com suas categorias e histórias.</p>
+            </div>
+
+            <!-- ============= GRAU 1: SERVO DE DEUS ============= -->
+            <div class="grau">
+                <h3><span class="grau-numero">1</span> Servo de Deus</h3>
+                <p class="grau-desc">Primeira etapa no caminho para os altares. A Igreja abre o processo e reconhece a reputação de santidade, mas ainda não há declaração oficial.</p>
+
+                <div class="santo">
+                    <h4>Irmã Dulce Pontes (Brasil)</h4>
+                    <p><strong>História:</strong> Nascida em Salvador (1914-1992), dedicou toda sua vida aos pobres, criando as "Obras Sociais Irmã Dulce". Conhecida como "Mãe dos Pobres". Tornou-se Serva de Deus em 1999.</p>
+                </div>
+
+                <div class="santo">
+                    <h4>Padre Cícero Romão Batista (Brasil)</h4>
+                    <p><strong>História:</strong> Sacerdote do Ceará (1844-1934), líder espiritual do povo nordestino. Mesmo com polêmicas em vida, é profundamente amado. Declarado Servo de Deus em 2022.</p>
+                </div>
+            </div>
+
+            <!-- ============= GRAU 2: VENERÁVEL ============= -->
+            <div class="grau">
+                <h3><span class="grau-numero">2</span> Venerável</h3>
+                <p class="grau-desc">Segundo passo. A Igreja reconhece oficialmente que viveu <strong>todas as virtudes em grau heróico</strong>. Falta apenas um milagre para ser Beato.</p>
+
+                <div class="santo">
+                    <h4>Venerável Irmã Dulce</h4>
+                    <p><strong>História:</strong> Em 2011, o Papa Bento XVI declarou que ela viveu virtudes heroicas, elevando-a ao grau de Venerável.</p>
+                </div>
+
+                <div class="santo">
+                    <h4>Venerável Madre Teresa de Calcutá</h4>
+                    <p><strong>História:</strong> Declarada Venerável em 2003 por João Paulo II, antes de ser Beata e Santa.</p>
+                </div>
+            </div>
+
+            <!-- ============= GRAU 3: BEM-AVENTURADO ============= -->
+            <div class="grau">
+                <h3><span class="grau-numero">3</span> Bem-Aventurado (Beato / Beata)</h3>
+                <p class="grau-desc">Terceira etapa. Recebeu o <strong>primeiro milagre</strong> atribuído à sua intercessão. Já pode ser venerado, mas apenas em uma região, ordem ou grupo específico.</p>
+
+                <h3 style="font-size:1.4rem; margin-top:1rem; color:#600000;">📌 Categorias de Beatos:</h3>
+
+                <h4 style="margin:1rem 0 0.5rem;">🩸 Mártires</h4>
+                <div class="santo">
+                    <h4>Beato Charles de Foucauld</h4>
+                    <p><strong>História:</strong> Ex-soldado que se converteu e viveu no deserto do Saara entre muçulmanos. Foi assassinado em 1916. Beato em 2005.</p>
+                </div>
+
+                <h4 style="margin:1rem 0 0.5rem;">✝️ Confessores</h4>
+                <div class="santo">
+                    <h4>Beato Carlo Acutis</h4>
+                    <p><strong>História:</strong> Menino italiano (1991-2006), apaixonado pela Eucaristia e tecnologia. Criou site sobre milagres eucarísticos. Morreu de leucemia aos 15 anos. Padroeiro da Internet.</p>
+                </div>
+
+                <div class="santo">
+                    <h4>Beato Pier Giorgio Frassati</h4>
+                    <p><strong>História:</strong> Jovem rico que vivia pobremente ajudando os outros. Morreu aos 27 anos. "Homem das Oito Bem-Aventuranças".</p>
+                </div>
+            </div>
+
+            <!-- ============= GRAU 4: SANTO ============= -->
+            <div class="grau">
+                <h3><span class="grau-numero">4</span> Santo / Santa</h3>
+                <p class="grau-desc">Grau máximo de canonização. Recebeu o <strong>segundo milagre</strong> e é declarado Santo para <strong>toda a Igreja Católica</strong>. É modelo e intercessor universal.</p>
+
+                <!-- ========= CATEGORIAS DE SANTOS ========= -->
+
+                <div class="categoria-santo">
+                    <h3>🩸 1. Mártires</h3>
+                    <p class="grau-desc">Santos que morreram por amor a Cristo. É o grau mais alto de testemunho.</p>
+
+                    <div class="santo">
+                        <h4>Santo Estêvão</h4>
+                        <p><strong>História:</strong> Primeiro mártir da Igreja. Apedrejado até a morte por pregar o Evangelho. Viu o Céu aberto antes de morrer. <em>Festa: 26 de dezembro.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>São Sebastião</h4>
+                        <p><strong>História:</strong> Soldado romano secreto cristão. Foi flechado e depois espancado até morrer. Padroeiro dos Atletas. <em>Festa: 20 de janeiro.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>São Maximiliano Kolbe</h4>
+                        <p><strong>História:</strong> Sacerdote em Auschwitz. Ofereceu-se para morrer de fome no lugar de um pai de família. <em>Festa: 14 de agosto.</em></p>
+                    </div>
+                </div>
+
+                <div class="categoria-santo">
+                    <h3>✝️ 2. Confessores</h3>
+                    <p class="grau-desc">Viveram a fé heroicamente, sofreram muito, mas não morreram mártires.</p>
+
+                    <div class="santo">
+                        <h4>São José</h4>
+                        <p><strong>História:</strong> Esposo de Maria e Pai Terreno de Jesus. Homem justo e operário. Protetor da Igreja Universal. <em>Festa: 19 de março.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>São Francisco de Assis</h4>
+                        <p><strong>História:</strong> Abandonou riquezas para viver pobreza e amor. Amava os animais e a natureza. Fundador dos Franciscanos. <em>Festa: 4 de outubro.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>Santo Antônio de Pádua</h4>
+                        <p><strong>História:</strong> Grande pregador e milagreiro. Conhece o que está perdido. Padroeiro do Brasil. <em>Festa: 13 de junho.</em></p>
+                    </div>
+                </div>
+
+                <div class="categoria-santo">
+                    <h3>📖 3. Doutores da Igreja</h3>
+                    <p class="grau-desc">Santos que deixaram ensinos excepcionais que guiam toda a Igreja.</p>
+
+                    <div class="santo">
+                        <h4>Santo Agostinho</h4>
+                        <p><strong>História:</strong> Viveu uma vida de erros até se converter. Bispo e escritor gigante ("Confissões"). <em>Festa: 28 de agosto.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>São Tomás de Aquino</h4>
+                        <p><strong>História:</strong> O "Doutor Angélico". Escreveu a Suma Teológica, base da Teologia Católica. <em>Festa: 28 de janeiro.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>Santa Teresa de Ávila</h4>
+                        <p><strong>História:</strong> Mística e reformadora do Carmelo. Primeira mulher Doutora da Igreja. Escreveu "O Castelo Interior". <em>Festa: 15 de outubro.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>Santa Teresinha do Menino Jesus</h4>
+                        <p><strong>História:</strong> Carmelita francesa (1873-1897). Descobriu o "Caminho da Infância Espiritual". Doutora da Igreja e Padroeira das Missões. <em>Festa: 1º de outubro.</em></p>
+                    </div>
+                </div>
+
+                <div class="categoria-santo">
+                    <h3>👑 4. Virgens</h3>
+                    <p class="grau-desc">Santas que consagraram sua virgindade a Deus como forma de amor total.</p>
+
+                    <div class="santo">
+                        <h4>Santa Agnes (Inês)</h4>
+                        <p><strong>História:</strong> Jovem romana martirizada aos 12-13 anos por recusar casamento para consagrar-se a Cristo. <em>Festa: 21 de janeiro.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>Santa Cecília</h4>
+                        <p><strong>História:</strong> Virgem e mártir romana. Padroeira da Música. Cantava a Deus no coração enquanto sofria o martírio. <em>Festa: 22 de novembro.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>Santa Luzia</h4>
+                        <p><strong>História:</strong> Virgem de Siracusa, martirizada por recusar casamento. Padroeira dos cegos e da visão. <em>Festa: 13 de dezembro.</em></p>
+                    </div>
+                </div>
+
+                <div class="categoria-santo">
+                    <h3>👨‍👩‍👧 5. Santos Leigos e Familiares</h3>
+                    <p class="grau-desc">Santificaram-se no meio do mundo, no trabalho, na família e na vida comum.</p>
+
+                    <div class="santo">
+                        <h4>São Luís IX, Rei da França</h4>
+                        <p><strong>História:</strong> Rei justo que governou com sabedoria cristã, cuidou dos pobres e doentes, e morreu durante uma Cruzada. <em>Festa: 25 de agosto.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>Santa Gianna Beretta Molla</h4>
+                        <p><strong>História:</strong> Médica italiana (1922-1962). Recusou tratamento que salvaria sua vida para não prejudicar o bebê que esperava. Mártir da maternidade. <em>Festa: 28 de abril.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>Santa Madre Teresa de Calcutá</h4>
+                        <p><strong>História:</strong> Albanesa que fundou as Missionárias da Caridade. Dedicou toda a vida ao cuidado dos mais pobres dos pobres. Canonizada em 2016. <em>Festa: 5 de setembro.</em></p>
+                    </div>
+                </div>
+
+                <div class="categoria-santo">
+                    <h3>⚓ 6. Apóstolos e Evangelistas</h3>
+                    <p class="grau-desc">Os primeiros enviados por Cristo, pilares da Igreja primitiva.</p>
+
+                    <div class="santo">
+                        <h4>São Pedro</h4>
+                        <p><strong>História:</strong> Primeiro Papa da Igreja. Pescador escolhido por Jesus como rocha da Igreja. Crucificado de cabeça para baixo em Roma. <em>Festa: 29 de junho.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>São Paulo</h4>
+                        <p><strong>História:</strong> Perseguidor convertido que se tornou o maior missionário. Escreveu a maioria das Epístolas do Novo Testamento. <em>Festa: 29 de junho.</em></p>
+                    </div>
+                    <div class="santo">
+                        <h4>São João Evangelista</h4>
+                        <p><strong>História:</strong> O "discípulo amado". Único apóstolo que não morreu mártir. Escreveu o Evangelho de João, três Epístolas e o Apocalipse. <em>Festa: 27 de dezembro.</em></p>
+                    </div>
+                </div>
+
+                <div class="categoria-santo">
+                    <h3>✨ 7. Santíssima Virgem Maria</h3>
+                    <p class="grau-desc">A maior de todos os santos. Mãe de Deus, Rainha dos Anjos e de todos os Santos. Está acima de qualquer outra criatura.</p>
+
+                    <div class="santo">
+                        <h4>Nossa Senhora — Maria Santíssima</h4>
+                        <p><strong>História:</strong> Escolhida por Deus antes de todos os séculos para ser Mãe do Salvador. Concebida sem pecado original (Imaculada Conceição). Viveu em perfeita obediência a Deus. Assumida ao Céu em corpo e alma (Assunção). Coroada Rainha do Céu e da Terra. Apareceu em Fátima (1917), Lourdes (1858), Guadalupe (1531) e outros lugares. Intercessora universal de toda a humanidade.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; cristianismo.blog.br — Todos os direitos reservados</p>
+        <p style="margin-top:0.5rem; opacity:0.8;">Conteúdo elaborado para a edificação da fé católica</p>
+    </footer>
+</body>
+</html>
